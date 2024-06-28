@@ -1,0 +1,1263 @@
+@media (min-width: 75rem) {
+  /* visual */
+  #visual {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-shadow: 10px 3px 30px black;
+  }
+  #visualBox {
+    width: 100% !important;
+  }
+  #visualBox h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  #visualBox > div {
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white;
+  }
+  /* 1번 비주얼입니다. */
+  #visual1 {
+    background-image: url(../img/visual1.jpg);
+  }
+  #visual1 > div {
+    position: relative;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 2번 비주얼입니다. */
+  #visual2 {
+    background-image: url(../img/visual2.jpg);
+    position: relative;
+  }
+  #visual2 > div {
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 3번 비주얼입니다. */
+  #visual3 {
+    background-image: url(../img/visual3.jpg);
+    position: relative;
+  }
+  #visual3 > div {
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .more {
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  /* 4번 비주얼입니다. */
+  #visual4 {
+    background-image: url(../img/visual4.jpg);
+    position: relative;
+  }
+  #visual4 > div {
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* arrow */
+  #visual_next {
+    right: 10% !important;
+  }
+  #visual_prev {
+    left: 10% !important;
+  }
+  #visual_next,
+  #visual_prev {
+    color: white;
+    font-weight: bold;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: white !important;
+  }
+
+  /* page1 */
+  #page1 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #page1 > ul img {
+    width: 450px;
+  }
+  #page1 li:first-child {
+    position: absolute;
+    top: 150px;
+    right: -500%;
+    transform: rotate(-30deg);
+    transition: 0.1s;
+  }
+  #page1 li:last-child {
+    position: absolute;
+    top: 450px;
+    left: -500%;
+    transform: rotate(30deg);
+    transition: 0.1s;
+  }
+  #page1 > div {
+    width: 700px;
+    height: 500px;
+    margin: 150px auto 0px;
+    text-align: center;
+    position: relative;
+    top: -100%;
+  }
+  #page1 > div img {
+    width: 300px;
+  }
+  #page1 p {
+    margin-bottom: 30px;
+  }
+  .p1_title {
+    font-size: 20px;
+  }
+  #page1 h2 {
+    margin: 50px;
+    line-height: 45px;
+    font-size: 35px;
+  }
+  .storyButton {
+    width: 230px;
+    height: 50px;
+    margin: 20px auto 0px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  .storyButton > p {
+    width: 229px;
+    height: 49px;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    z-index: 99;
+  }
+  .white {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  /* page2 */
+  #page2 {
+    padding: 0px 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f4f4;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  #page2 ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .p2_left {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+  }
+  .p2_left > p {
+    margin: 50px 0px 60px;
+    color: gray;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+  }
+  .p2_left > h2 {
+    font-size: 40px;
+    line-height: 65px;
+    position: relative;
+    top: 100px;
+  }
+  .discoverButton {
+    width: 200px;
+    height: 50px;
+    margin: 50px 0px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+  }
+  #table {
+    display: none;
+  }
+  .table_p2 {
+    display: none;
+  }
+  .discoverButton p {
+    width: 197.5px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 90;
+  }
+  .pink {
+    width: 200px;
+    height: 50px;
+    background-color: #f9f4f4;
+    position: absolute;
+    top: 50px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  #page2 img {
+    width: 400px;
+    cursor: pointer;
+  }
+  /* right */
+  .page2Box {
+    width: 65%;
+    overflow: hidden;
+  }
+  .slide {
+    width: 1600px;
+    position: relative;
+    left: 0;
+  }
+  .slide li {
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+    right: -10%;
+  }
+  /* page3 */
+  #page3 h2 {
+    margin: 30px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #page3 ul {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+  }
+  #page3 li {
+    width: calc(100% / 4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  #page3 li > p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page3 li:hover {
+    width: 100%;
+    filter: brightness(0.7);
+    transition: 0.5s ease;
+  }
+  #page3 li:hover p {
+    line-height: 150px;
+    color: white;
+    z-index: 100;
+  }
+  #page3 div {
+    width: 100%;
+    height: 150px;
+    background-color: hwb(0 0% 100%);
+    transition: background-color 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+  }
+  #page3 li:first-child {
+    background-image: url(../img/베스트\ 셀러1.jpg);
+  }
+  #page3 li:nth-child(2) {
+    background-image: url(../img/베스트\ 셀러2.jpg);
+  }
+  #page3 li:nth-child(3) {
+    background-image: url(../img/베스트\ 셀러4.jpg);
+  }
+  #page3 li:last-child {
+    background-image: url(../img/about.jpg);
+  }
+  /* page4 */
+  #page4 {
+    width: 1200px;
+    margin: 0px auto;
+  }
+  #page4 h2 {
+    margin: 100px 0px 50px;
+    text-align: center;
+    font-size: 40px;
+  }
+  #page4 img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  #review {
+    width: 1000px !important;
+    margin: 0px auto;
+    gap: 10px;
+    transition: 1s;
+  }
+  #review li {
+    width: 300px !important;
+    margin-right: 20px !important;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: translateY(100px);
+    transition: 1s;
+  }
+  #review.duration li {
+    transform: translateY(0px);
+  }
+  #review li:nth-child(1) {
+    transition-duration: 0.2s;
+  }
+  #review li:nth-child(2) {
+    transition-duration: 0.4s;
+  }
+  #review li:nth-child(3) {
+    transition-duration: 0.6s;
+  }
+  #review li:nth-child(4) {
+    transition-duration: 0.9s;
+  }
+  #review > li p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .filter {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.03);
+    position: absolute;
+  }
+  .grade {
+    margin-top: 10px;
+    display: flex;
+  }
+  .star {
+    width: 88px;
+    height: 20px;
+    margin-right: 10px;
+    display: block;
+    background-image: url(https://static-resource-smartstore.pstatic.net/brandstore/p/static/20240514161828/img/sprite/svg/spBs_icon_svg.svg);
+    background-size: 339px 321px;
+    background-position: -144px -73px;
+  }
+  #page4_next,
+  #page4_prev {
+    color: gray;
+    font-weight: bold;
+  }
+  /* page5 */
+  #page5 {
+    line-height: 40px;
+    margin-top: 250px;
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f4f4;
+  }
+  #page5 img {
+    width: 20%;
+    filter: brightness(0);
+  }
+  #page5 p {
+    font-weight: 500;
+  }
+  #page5 button {
+    width: 20%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media (min-width: 391px) and (max-width: 74.5rem) {
+  /* visual */
+  #visual {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-shadow: 10px 3px 30px black;
+  }
+  #visualBox {
+    width: 100% !important;
+  }
+  #visualBox h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  #visualBox > div {
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white;
+  }
+  /* 1번 비주얼입니다. */
+  #visual1 {
+    background-image: url(../img/visual1.jpg);
+  }
+  #visual1 > div {
+    position: relative;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 2번 비주얼입니다. */
+  #visual2 {
+    background-image: url(../img/visual2.jpg);
+    position: relative;
+  }
+  #visual2 > div {
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 3번 비주얼입니다. */
+  #visual3 {
+    background-image: url(../img/visual3.jpg);
+    position: relative;
+  }
+  #visual3 > div {
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .more {
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  /* 4번 비주얼입니다. */
+  #visual4 {
+    background-image: url(../img/visual4.jpg);
+    position: relative;
+  }
+  #visual4 > div {
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* arrow */
+  #visual_next {
+    right: 10% !important;
+  }
+  #visual_prev {
+    left: 10% !important;
+  }
+  #visual_next,
+  #visual_prev {
+    color: white;
+    font-weight: bold;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: white !important;
+  }
+
+  /* page1 */
+  #page1 {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #page1 > ul img {
+    width: 450px;
+  }
+  #page1 li:first-child {
+    position: absolute;
+    top: 150px;
+    right: -500%;
+    transform: rotate(-30deg);
+    transition: 0.1s;
+    z-index: 99;
+  }
+  #page1 li:last-child {
+    position: absolute;
+    top: 450px;
+    left: -500%;
+    transform: rotate(30deg);
+    transition: 0.1s;
+  }
+  #page1 > div {
+    width: 700px;
+    height: 500px;
+    margin: 150px auto 0px;
+    text-align: center;
+    position: relative;
+    top: -100%;
+  }
+  #page1 > div img {
+    width: 300px;
+  }
+  #page1 p {
+    margin-bottom: 30px;
+  }
+  .p1_title {
+    font-size: 20px;
+  }
+  #page1 h2 {
+    margin: 50px;
+    line-height: 45px;
+    font-size: 35px;
+  }
+  .storyButton {
+    width: 230px;
+    height: 50px;
+    margin: 20px auto 0px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  .storyButton > p {
+    width: 229px;
+    height: 49px;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    z-index: 99;
+  }
+  .white {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  /* page2 */
+  #page2 {
+    padding: 0px 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f4f4;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  #page2 ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .p2_left {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+  }
+  .p2_left > p {
+    margin: 50px 0px 60px;
+    color: gray;
+    font-size: 30px;
+    position: relative;
+    top: 100px;
+  }
+  .p2_left > h2 {
+    font-size: 30px;
+    line-height: 65px;
+    position: relative;
+    top: 100px;
+  }
+  .discoverButton {
+    width: 200px;
+    height: 50px;
+    margin: 50px 0px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: 70px;
+  }
+  .discoverButton p {
+    width: 197.5px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 90;
+  }
+  .pink {
+    width: 200px;
+    height: 50px;
+    background-color: #f9f4f4;
+    position: absolute;
+    top: 50px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  .table_p2 {
+    display: none;
+  }
+  #table {
+    display: none;
+  }
+  #page2 img {
+    width: 400px;
+    cursor: pointer;
+  }
+  /* right */
+  .page2Box {
+    width: 100%;
+    overflow: hidden;
+  }
+  .slide {
+    width: 400%;
+    position: relative;
+    left: 0;
+  }
+  .slide li {
+    opacity: 0;
+    transition: 0.5s;
+    position: relative;
+    right: -10%;
+  }
+
+  /* page3 */
+  #page3 h2 {
+    margin: 30px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #page3 ul {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+  }
+  #page3 li {
+    width: calc(100% / 4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  #page3 li > p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page3 li:hover {
+    width: 100%;
+    filter: brightness(0.7);
+    transition: 0.5s ease;
+  }
+  #page3 li:hover p {
+    line-height: 150px;
+    color: white;
+    z-index: 100;
+  }
+  #page3 div {
+    width: 100%;
+    height: 150px;
+    background-color: hwb(0 0% 100%);
+    transition: background-color 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+  }
+  #page3 li:first-child {
+    background-image: url(../img/베스트\ 셀러1.jpg);
+  }
+  #page3 li:nth-child(2) {
+    background-image: url(../img/베스트\ 셀러2.jpg);
+  }
+  #page3 li:nth-child(3) {
+    background-image: url(../img/베스트\ 셀러4.jpg);
+  }
+  #page3 li:last-child {
+    background-image: url(../img/about.jpg);
+  }
+  /* page4 */
+  #page4 {
+    width: 100%;
+    margin: 0px auto 50px;
+  }
+  #page4 h2 {
+    margin: 100px 0px 50px;
+    text-align: center;
+    font-size: 40px;
+  }
+  #page4 img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  #review {
+    width: 90% !important;
+    margin: 0px auto;
+    gap: 10px;
+    transition: 1s;
+  }
+  #review li {
+    width: 300px !important;
+    margin-right: 20px !important;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: translateY(100px);
+    transition: 1s;
+  }
+  #review.duration li {
+    transform: translateY(0px);
+  }
+  #review li:nth-child(1) {
+    transition-duration: 0.2s;
+  }
+  #review li:nth-child(2) {
+    transition-duration: 0.4s;
+  }
+  #review li:nth-child(3) {
+    transition-duration: 0.6s;
+  }
+  #review li:nth-child(4) {
+    transition-duration: 0.9s;
+  }
+  #review > li p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .filter {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.03);
+    position: absolute;
+  }
+  .grade {
+    margin-top: 10px;
+    display: flex;
+  }
+  .star {
+    width: 88px;
+    height: 20px;
+    margin-right: 10px;
+    display: block;
+    background-image: url(https://static-resource-smartstore.pstatic.net/brandstore/p/static/20240514161828/img/sprite/svg/spBs_icon_svg.svg);
+    background-size: 339px 321px;
+    background-position: -144px -73px;
+  }
+  #page4_next,
+  #page4_prev {
+    color: gray;
+    font-weight: bold;
+  }
+  /* page5 */
+  #page5 {
+    line-height: 40px;
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f4f4;
+  }
+  #page5 img {
+    width: 60%;
+    filter: brightness(0);
+  }
+  #page5 p {
+    font-weight: 500;
+  }
+  #page5 button {
+    width: 20%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media (max-width: 390px) {
+  /* visual */
+  #visual {
+    width: 100%;
+    height: 20vh;
+    overflow-x: hidden;
+  }
+  #visualBox {
+    width: 100% !important;
+  }
+  #visualBox h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  #visualBox > div {
+    width: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white;
+  }
+  /* 1번 비주얼입니다. */
+  #visual1 {
+    background-image: url(../img/visual1.jpg);
+  }
+  #visual1 > div {
+    position: relative;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 2번 비주얼입니다. */
+  #visual2 {
+    background-image: url(../img/visual2.jpg);
+    position: relative;
+  }
+  #visual2 > div {
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+  }
+
+  /* 3번 비주얼입니다. */
+  #visual3 {
+    background-image: url(../img/visual3.jpg);
+    position: relative;
+  }
+  #visual3 > div {
+    width: 700px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .more {
+    width: 200px;
+    margin: 20px auto;
+    padding: 20px 50px;
+    background-color: white;
+    color: black;
+  }
+  /* 4번 비주얼입니다. */
+  #visual4 {
+    background-image: url(../img/visual4.jpg);
+    position: relative;
+  }
+  #visual4 > div {
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* arrow */
+  #visual_next {
+    right: 10% !important;
+  }
+  #visual_prev {
+    left: 10% !important;
+  }
+  #visual_next,
+  #visual_prev {
+    color: white;
+    font-weight: bold;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: white !important;
+  }
+
+  /* page1 */
+  #page1 {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #page1 > ul {
+    display: none;
+  }
+  #page1 > ul img {
+    width: 2rem;
+  }
+  #page1 > div {
+    width: 400px;
+    height: 500px;
+    margin: 50px auto 0px;
+    text-align: center;
+    position: relative;
+    top: -100%;
+  }
+  #page1 > div img {
+    width: 150px;
+  }
+  #page1 p {
+    margin-bottom: 30px;
+  }
+  .p1_title {
+    font-size: 15px;
+  }
+  #page1 h2 {
+    margin: 30px;
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #page1 h5 {
+    font-size: 15px;
+  }
+  .storyButton {
+    width: 230px;
+    height: 50px;
+    margin: 20px auto 0px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+  }
+  .storyButton > p {
+    width: 229px;
+    height: 49px;
+    border-radius: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    z-index: 99;
+  }
+  .white {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  /* page2 */
+  #page2 {
+    padding: 0 20px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f4f4;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #page2 ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .p2_left {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+  }
+  .p2_left > p {
+    margin: 20px 0;
+    font-size: 18px;
+    position: relative;
+    top: 0;
+  }
+  .p2_left > h2 {
+    font-size: 24px;
+    line-height: 40px;
+    position: relative;
+    top: 0;
+  }
+  .discoverButton {
+    width: 160px;
+    height: 40px;
+    margin: 20px 0;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  #table {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .table_p2 {
+    width: 100%;
+    margin-top: 20px;
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .discoverButton p {
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 90;
+  }
+  .pink {
+    width: 160px;
+    height: 40px;
+    background-color: #f9f4f4;
+    position: absolute;
+    top: 50px;
+  }
+  .color {
+    color: black;
+    transition: 0.5s ease;
+  }
+  #page2 img {
+    width: 135px;
+    cursor: pointer;
+  }
+  /* right */
+  .page2Box {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  .slide {
+    width: 200%;
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+  .slide li {
+  }
+  /* page3 */
+  #page3 h2 {
+    margin: 30px;
+    font-size: 60px;
+    text-align: center;
+  }
+  #page3 ul {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+  }
+  #page3 li {
+    width: calc(100% / 4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  #page3 li > p {
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page3 li:hover {
+    width: 100%;
+    filter: brightness(0.7);
+    transition: 0.5s ease;
+  }
+  #page3 li:hover p {
+    line-height: 150px;
+    color: white;
+    z-index: 100;
+  }
+  #page3 div {
+    width: 100%;
+    height: 150px;
+    background-color: hwb(0 0% 100%);
+    transition: background-color 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+  }
+  #page3 li:first-child {
+    background-image: url(../img/베스트\ 셀러1.jpg);
+  }
+  #page3 li:nth-child(2) {
+    background-image: url(../img/베스트\ 셀러2.jpg);
+  }
+  #page3 li:nth-child(3) {
+    background-image: url(../img/베스트\ 셀러4.jpg);
+  }
+  #page3 li:last-child {
+    background-image: url(../img/베스트\ 셀러3.jpg);
+  }
+  /* page4 */
+  #page4 {
+    display: none;
+  }
+  #page4 h2 {
+    margin: 100px 0px 50px;
+    text-align: center;
+    font-size: 40px;
+  }
+  #page4 img {
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  #review {
+    width: 800px !important;
+    margin: 50px;
+    gap: 10px;
+    /* overflow-x: hidden; */
+  }
+  #reviewBox {
+    width: 300px !important;
+    margin-right: 20px !important;
+    cursor: pointer;
+  }
+  #reviewBox p {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .filter {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.03);
+    position: absolute;
+  }
+  .grade {
+    margin-top: 10px;
+    display: flex;
+  }
+  .star {
+    width: 88px;
+    height: 20px;
+    margin-right: 10px;
+    display: block;
+    background-image: url(https://static-resource-smartstore.pstatic.net/brandstore/p/static/20240514161828/img/sprite/svg/spBs_icon_svg.svg);
+    background-size: 339px 321px;
+    background-position: -144px -73px;
+  }
+  #page4_next,
+  #page4_prev {
+    color: gray;
+    font-weight: bold;
+  }
+  /* page5 */
+  #page5 {
+    line-height: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f9f4f4;
+  }
+  #page5 img {
+    width: 60%;
+    margin-bottom: 20px;
+    filter: brightness(0);
+  }
+  #page5 p {
+    font-weight: 500;
+  }
+  #page5 button {
+    width: 40%;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

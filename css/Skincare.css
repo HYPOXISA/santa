@@ -1,0 +1,92 @@
+/* visual */
+#visual {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(163, 177, 209, 1) 50%
+  );
+}
+#visual > div {
+  background-image: url(../img/실험실.jpg);
+}
+/* container */
+section {
+  width: 80%;
+  margin: 0px auto 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section ul {
+  width: 300px;
+  height: 300px;
+  margin: 10px 10px 50px;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  border-bottom: 2px solid #bbbbbb;
+}
+section ul p {
+  width: 300px;
+  margin-top: 30px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+section ul h2 {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+section img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+#container h1 {
+  text-align: center;
+}
+#container section ul {
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+#container section ul.show {
+  opacity: 1;
+}
+
+/* 애니메이션 */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+.click-text {
+  position: relative;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.651);
+}
